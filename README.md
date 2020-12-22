@@ -1,5 +1,5 @@
 # Nuxt Content Algolia Module
-Automatically (during `npm run generate`) sync content stored in your project with nuxt content`to an [Algolia](https://www.algolia.com) index. This allows you to manage your content in your repo while providing powerful search capabilities to your site users.
+Automatically (during `npm run generate`) sync content stored in your project with nuxt content to an [Algolia](https://www.algolia.com) index. This allows you to manage your content in your repo while providing powerful search capabilities to your site users.
 
 Works great with sites hosted on Netlify, etc that automatically run your build command when you commit new content.
 
