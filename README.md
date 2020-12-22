@@ -5,7 +5,7 @@ Works great with sites hosted on Netlify, etc that automatically run your build 
 
 ## Installation
 ```
-npm install nuxt-content-algolia algoliasearch
+npm install nuxt-content-algolia
 ```
 
 ## Quickstart
