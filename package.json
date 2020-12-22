@@ -1,0 +1,24 @@
+{
+  "name": "nuxt-content-algolia",
+  "version": "0.1.0",
+  "description": "Sync content stored in markdown files in your Nuxt project to algolia ",
+  "main": "module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt-content",
+    "algolia"
+  ],
+  "author": "Daniel Kelly",
+  "license": "MIT",
+  "peerDependencies": {
+    "@nuxt/content": "1.x.x",
+    "nuxt": "2.x.x"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.8.3",
+    "consola": "^2.15.0"
+  }
+}
