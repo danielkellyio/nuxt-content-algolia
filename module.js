@@ -2,10 +2,10 @@ const consola = require('consola')
 const algoliasearch = require('algoliasearch')
 
 export default function algoliaModule(moduleOptions = {}) {
-    this.options.nuxtAlgolia = this.options.nuxtContentAlgolia || {}
+    this.options.nuxtContentAlgolia = this.options.nuxtContentAlgolia || {}
     const config = {
         hook: 'generate:done',
-        ...this.options.nuxtAlgolia,
+        ...this.options.nuxtContentAlgolia,
         ...moduleOptions,
     }
     
@@ -32,6 +32,9 @@ export default function algoliaModule(moduleOptions = {}) {
             
             const client = algoliasearch(config.appId, config.apiKey)
             const index = client.initIndex(indexName)
+    
+            // clear the index in case any documents were removed
+            index.clearObjects()
             
             const { objectIDs } = await index.saveObjects(docs)
             consola.success(

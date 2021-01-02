@@ -1,6 +1,6 @@
 {
   "name": "nuxt-content-algolia",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Sync content stored in markdown files in your Nuxt project to algolia ",
   "main": "module.js",
   "scripts": {
