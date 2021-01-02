@@ -2,7 +2,6 @@ const consola = require('consola')
 const algoliasearch = require('algoliasearch')
 
 export default function algoliaModule(moduleOptions = {}) {
-    console.log('new pacakge')
     this.options.nuxtContentAlgolia = this.options.nuxtContentAlgolia || {}
     const config = {
         hook: 'generate:done',
