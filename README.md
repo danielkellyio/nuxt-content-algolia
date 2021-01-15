@@ -27,6 +27,8 @@ export default{
         paths: [
             {
                 name: 'blog',
+                // option to search in subfolders, false by default
+                deep: true
                 // optional (will use name if index not specified)
                 index: process.env.ALGOLIA_INDEX || 'blog',
                 fields: ['title', 'description', 'bodyPlainText', 'tags'],
