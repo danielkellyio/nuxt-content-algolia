@@ -21,7 +21,8 @@ export default function algoliaModule(moduleOptions = {}) {
         for (let i = 0; i < config.paths.length; i++) {
             const path = config.paths[i]
             const indexName = path.index || path.name
-            let docs = await $content(path.name).fetch()
+            const deep = path.deep;
+            let docs = await $content(path.name, { deep }).fetch()
             
             docs = docs.map((doc) => {
                 const newDoc = {}
