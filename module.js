@@ -35,7 +35,7 @@ export default function algoliaModule(moduleOptions = {}) {
             const index = client.initIndex(indexName)
     
             // clear the index in case any documents were removed
-            index.clearObjects()
+            await index.clearObjects()
             
             const { objectIDs } = await index.saveObjects(docs)
             consola.success(
